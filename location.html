@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magintec - Location de voitures de sport</title>
+
+    <!-- WindiCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/windicss-runtime-dom"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #0f0f0f;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="text-white">
+
+    <!-- NAVIGATION -->
+    <header class="w-full bg-black py-5 flex flex-col items-center px-6 md:px-16">
+        <img src="image.png" class="w-56 md:w-72 h-auto" />
+
+        <nav class="flex flex-wrap justify-center gap-6 md:space-x-12 text-lg mt-4">
+            <a href="#" class="text-green-500 hover:text-white no-underline">Home</a>
+            <a href="#" class="text-green-500 hover:text-white no-underline">Vehicles</a>
+            <a href="#" class="text-green-500 hover:text-white no-underline">Conditions</a>
+            <a href="#" class="text-white font-bold no-underline">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CARTE GOOGLE -->
+    <section class="w-full flex justify-center bg-black mt-4">
+        <img src="carte.png" class="w-full md:w-10/12 border border-gray-700" />
+    </section>
+
+    <!-- TITRE CENTRAL -->
+    <section class="text-center py-10 px-4">
+        <h1 class="text-3xl font-semibold">Location de voitures de sport</h1>
+        <p class="text-green-500 text-xl mt-2">Réservation par email: info@magintec.com</p>
+    </section>
+
+    <!-- FORMULAIRE + CONTACT -->
+    <section class="w-11/12 mx-auto flex flex-wrap md:flex-nowrap justify-between py-10 gap-10">
+
+        <!-- FORMULAIRE -->
+        <div class="w-full md:w-1/2 border border-green-700 p-6 rounded">
+            <h2 class="text-xl mb-4">Envoyer un e-mail</h2>
+
+            <form class="flex flex-col space-y-4">
+                <div>
+                    <label>Nom *</label>
+                    <input type="text" class="text-white w-full p-2 bg-black border border-gray-600" />
+                </div>
+
+                <div>
+                    <label>E-mail *</label>
+                    <input type="email" class="text-white w-full p-2 bg-black border border-gray-600" />
+                </div>
+
+                <div>
+                    <label>Numéro de téléphone *</label>
+                    <input type="text" class="text-white w-full p-2 bg-black border border-gray-600" />
+                </div>
+
+                <div>
+                    <label>Message *</label>
+                    <textarea rows="6" class="text-white w-full p-2 bg-black border border-gray-600"></textarea>
+                </div>
+
+                <button class="bg-green-600 hover:bg-green-700 py-2 rounded">Envoyer</button>
+            </form>
+        </div>
+
+        <!-- INFOS CONTACT -->
+        <div class="w-full md:w-1/3 text-center bg-black p-10">
+
+            <div class="flex flex-col items-center">
+                <i class="fas fa-home text-green-500 text-4xl"></i>
+                <p class="text-lg mt-2">Duarrefstross 2<br>9990 Weiswampach (Luxembourg)</p>
+            </div>
+
+            <div class="mt-8 text-lg flex flex-col items-center">
+                <i class="fas fa-phone-alt text-green-500 text-4xl"></i>
+                <p class="text-green-500">Téléphone</p>
+                <p>+352/691.105.854</p>
+            </div>
+
+            <div class="mt-8 text-lg flex flex-col items-center">
+                <i class="fas fa-envelope text-green-500 text-4xl"></i>
+                <p class="text-green-500">Contact par Email</p>
+                <p><a href="#" class="no-underline text-blue-500">info@magintec.com</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION RESERVATION -->
+    <section class="text-center py-16 bg-black px-4"
+        style="background-image: url('img/car-interior.jpg'); background-size: cover; background-position: center;">
+        
+        <h2 class="text-2xl tracking-wide">
+            COMMENT RÉSERVER UNE<br>
+            <span class="font-bold">LOCATION DE VOITURE DE SPORT</span>
+        </h2>
+
+        <p class="mt-3">
+            Prenez contact par mail à 
+            <a href="#" class="no-underline text-blue-500">info@magintec.com</a> 
+            ou via le formulaire de notre site.
+        </p>
+
+        <button class="mt-6 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded text-lg">
+            JE RÉSERVE MA VOITURE
+        </button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full text-center text-sm py-6 bg-black px-4">
+        Magintec Sàrl, Duarrefstrooss 2, 9990 Weiswampach (Luxembourg) |
+        Conditions générale de vente
+    </footer>
+
+</body>
+</html>
