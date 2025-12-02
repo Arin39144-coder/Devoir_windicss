@@ -52,27 +52,36 @@
             <h2 class="text-xl mb-4">Envoyer un e-mail</h2>
 
             <form class="flex flex-col space-y-4">
+                <div class="flex flex-col">
+                    <label class="text-gray-500">Nom<span class="text-red-500">*</span></label>
+                    <input type="text" class="text-black w-70 p-2 bg-white border border-white-600" />
+                </div>
+                
                 <div>
-                    <label>Nom *</label>
-                    <input type="text" class="text-white w-full p-2 bg-black border border-gray-600" />
+                    <div class="flex flex-col space-y-4">
+                     <label class="text-gray-500">Email<span class="text-red-500">*</span></label>
+                    <input type="email" class="text-white w-70 p-2 bg-white border border-gray-600" />
+                    </div>
+                    
+                </div>
+
+                <div> 
+                    <div class="flex flex-col space-y-4">
+                    <label class="text-gray-500">Numero de téléphone<span class="text-red-500">*</span></label>
+                    <input type="text" class="text-white w-70 p-2 bg-white border border-gray-600" />
+                    </div>
                 </div>
 
                 <div>
-                    <label>E-mail *</label>
-                    <input type="email" class="text-white w-full p-2 bg-black border border-gray-600" />
+                    <div class="flex flex-col space-y-4">
+                    <label class="text-gray-500">Message<span class="text-red-500">*</span></label>
+                    </div>
+                    <textarea rows="6" class="text-white w-140 p-2 bg-white border border-gray-600"></textarea>
                 </div>
-
-                <div>
-                    <label>Numéro de téléphone *</label>
-                    <input type="text" class="text-white w-full p-2 bg-black border border-gray-600" />
-                </div>
-
-                <div>
-                    <label>Message *</label>
-                    <textarea rows="6" class="text-white w-full p-2 bg-black border border-gray-600"></textarea>
-                </div>
-
-                <button class="bg-green-600 hover:bg-green-700 py-2 rounded">Envoyer</button>
+                
+            <div>
+                <button class="bg-white-50 hover:bg-white-50 py-2 rounded">Envoyer</button>
+            </div>
             </form>
         </div>
 
@@ -81,19 +90,16 @@
 
             <div class="flex flex-col items-center">
                 <i class="fas fa-home text-green-500 text-4xl"></i>
-                <p class="text-lg mt-2">Duarrefstross 2<br>9990 Weiswampach (Luxembourg)</p>
+                <p class="text-lg mt-2" style="font-size: 34px;">Duarrefstross 2<br><span class="text-xs">9990 Weiswampach (Luxembourg)</span></p>
             </div>
 
             <div class="mt-8 text-lg flex flex-col items-center">
                 <i class="fas fa-phone-alt text-green-500 text-4xl"></i>
-                <p class="text-green-500">Téléphone</p>
-                <p>+352/691.105.854</p>
+                <p class="text-lg mt-2" style="color: white;font-size: 34px;">Téléphone <br><span class="text-xs">+352/691.105.854</span></p>
             </div>
-
             <div class="mt-8 text-lg flex flex-col items-center">
                 <i class="fas fa-envelope text-green-500 text-4xl"></i>
-                <p class="text-green-500">Contact par Email</p>
-                <p><a href="#" class="no-underline text-blue-500">info@magintec.com</a></p>
+                <p class="text-green-500" style="color: white;font-size: 34px;">Contact par Email<br><span class="text-xs">info@magintec.com</span></p>
             </div>
 
         </div>
@@ -103,18 +109,18 @@
     <section class="text-center py-16 bg-black px-4"
         style="background-image: url('img/car-interior.jpg'); background-size: cover; background-position: center;">
         
-        <h2 class="text-2xl tracking-wide">
+        <h2 class="text-sm tracking-wide">
             COMMENT RÉSERVER UNE<br>
-            <span class="font-bold">LOCATION DE VOITURE DE SPORT</span>
+            <span class="text-2xl">LOCATION DE VOITURE DE SPORT</span>
         </h2>
 
-        <p class="mt-3">
+        <p class="mt-3 text-xm">
             Prenez contact par mail à 
-            <a href="#" class="no-underline text-blue-500">info@magintec.com</a> 
+            <a href="#" class="no-underline text-white-500">info@magintec.com</a> 
             ou via le formulaire de notre site.
         </p>
 
-        <button class="mt-6 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded text-lg">
+        <button class="mt-6 bg-green-700 hover:bg-green-900 text-white px-8 py-3 rounded text-lg">
             JE RÉSERVE MA VOITURE
         </button>
     </section>
