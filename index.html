@@ -1,0 +1,519 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zolden - clone (exemple)</title>
+  <link rel="stylesheet" href="windi.css">
+  <script src="windicss.js">  </script>
+</head>
+<body class="font-sans">
+
+  <!-- Top promo bar -->
+  <div class="w-full bg-[#0c1636] text-white text-sm py-2 flex justify-center items-center">
+  <img src="images/589965175_886902177238762_5229353926184456007_n.png" >
+  </div>
+
+  <!-- Sub bar -->
+  <div class="w-full bg-[#1b253e] text-white text-sm py-2 px-4 flex justify-between">
+    <span>Free shipping on orders over $79</span>
+    <a >Login</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="w-full bg-white flex justify-between items-center px-8 py-4 shadow">
+    
+    <!-- Logo -->
+    <div class="text-3xl font-semibold tracking-wide">
+     <img src="images/Logooo.png" >
+    </div>
+
+    <!-- Nav links -->
+    <div class="flex gap-8 text-gray-600 text-sm">
+      <a href="#" class="no-underline">Shop</a>
+      <a href="#" class="no-underline">Woman<span>▾</span></a>
+      <a href="#" class="no-underline">Man<span>▾</span></a>
+      <a href="#" class="no-underline">Sale</a>
+      <a href="#" class="no-underline">
+        Pages
+        <span>▾</span>
+      </a>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex items-center gap-6 text-gray-600 text-lg">
+      <button>🔍</button>
+      <button class="relative">⚖️ <span class="absolute -top-2 -right-2 text-xs bg-blue-400 text-white rounded-full px-1">0</span></button>
+      <button class="relative">💙 <span class="absolute -top-2 -right-2 text-xs bg-blue-400 text-white rounded-full px-1">0</span></button>
+      <button class="relative">🛒 <span class="absolute -top-2 -right-2 text-xs bg-blue-400 text-white rounded-full px-1">0</span></button>
+    </div>
+
+  </nav>
+    <!-- Hero -->
+       <!-- HERO IMG -->
+    <main>
+     <section
+       class="relative h-[72vh] min-h-[420px] w-full bg-center bg-cover "
+        style="background-image:url('images/Fond2.png');"
+         >
+         <!-- dark overlay subtle (optional) -->
+         <div class="absolute inset-0 bg-black/10"></div>
+
+         <!-- centered white card -->
+       <div class="absolute inset-0 flex items-center justify-center px-6 m-lg">
+        <div class="w-full max-w-lg bg-white/95 shadow-lg px-6 py-4 md:px-8 md:py-6 text-center border border-gray-100">
+          <p class="text-xs text-sky-300 uppercase tracking-wider mb-4">New In</p>
+
+          <h1 class="text-2xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-8 ">
+            Goodbye stereotypes.<br/>
+            Hello Zerotypes.
+          </h1>
+
+          <div class="mt-4">
+            <a href="#shop" class="inline-flex items-center justify-center bg-gray-900 text-white px-6 py-3 rounded shadow-md text-sm hover:opacity-90 transition">
+              Shop Now
+              <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+             </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- right vertical tab (like the sample) -->
+        <div class="absolute right-6 top-1/3 hidden lg:flex">
+          <div class="rotate-90 origin-right bg-slate-800 text-white px-3 py-2 rounded-l-md text-xs tracking-wide">
+             templates vs templates
+          </div>
+        </div>
+     </section>
+  </main>
+
+   
+  </section>
+  <!-- Three-block promo (large left, two stacked right) -->
+  <section class="max-w-6xl mx-auto px-4 mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="lg:col-span-2 bg-gray-20">
+      <div class="h-150 w-150 sm:h-96  overflow-hidden">
+        <img src="images/Sac1.png" alt="sac" class="h-100 w-150" />
+      </div>
+      
+    </div>
+
+    <div class="flex flex-col gap-6">
+      <div class="bg-gray-50 h-40 sm:h-50 overflow-hidden">
+        <img src="images/Womannn.png" alt="femme" class="h-full w-full" />
+        <div class="p-4">
+          <span class="text-xs text-gray-500">Women</span>
+          <div class="mt-1"><a href="#" class="text-sm">Shop Now →</a></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 h-50 sm:h-48 overflow-hidden">
+        <img src="images/Mannnnn.png" alt="homme" class="h-full w-full" />
+        <div class="p-4">
+          <span class="text-xs text-gray-500">Men</span>
+          <div class="mt-1"><a href="#" class="text-sm">Shop Now →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters / tabs row (simple) -->
+  <div class="max-w-6xl mx-auto px-4 mt-8">
+    <div class="flex gap-4 text-sm text-white-500 justify-center bg-white">
+      <button class="py-2 px-3">New Arrivals</button>
+      <button class="py-2 px-3">Best Sellers</button>
+      <button class="py-2 px-3">Most Popular</button>
+      <button class="py-2 px-3">Women</button>
+      <button class="py-2 px-3">Men</button>
+    </div>
+  </div>
+
+  <!-- Product grid -->
+  <section class="max-w-6xl mx-auto px-4 mt-6 pb-8">
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Repeat product card (12 exemples) -->
+      <!-- Card -->
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/T-shirt.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Muscle Fit T-shirt</h4>
+          <p class="text-sm font-medium mt-1">60.00$</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/Sweaterrrr.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Sweater with voluminous sleeves</h4>
+          <p class="text-sm font-medium mt-1">60.00$</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/Totebagggg.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Tote bag with chain</h4>
+          <p class="text-sm font-medium mt-1">$80.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/Sweatervolume.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Sweater with voluminous sleeves</h4>
+          <p class="text-sm font-medium mt-1">90.00$</p>
+        </div>
+      </article>
+
+      <!-- 8 more placeholders -->
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden h-75">
+          <img src="images/Jacketttttt.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Reflective jacket</h4>
+          <p class="text-sm font-medium mt-1">^$110.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden h-75">
+          <img src="images/Poplineeee.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Popoline shirt with belt</h4>
+          <p class="text-sm font-medium mt-1">$50.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden  h-75">
+          <img src="images/Jeansssss.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Super high waist jeans</h4>
+          <p class="text-sm font-medium mt-1">$90.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden  ">
+          <img src="images/High waist.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">High waist denim short</h4>
+          <p class="text-sm font-medium mt-1">$35.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/Blazerrrrr.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Linen-effect blazer</h4>
+          <p class="text-sm font-medium mt-1">$30.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/Glassessssssss.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Cateye sunglasses</h4>
+          <p class="text-sm font-medium mt-1">$220.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/Fauxleatherrrrrrr.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Faux leather biker jacket</h4>
+          <p class="text-sm font-medium mt-1">€150.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-gray-100">
+        <div class="aspect-[3/4] overflow-hidden">
+          <img src="images/Puffffrerrrrr.png" alt="product" />
+        </div>
+        <div class="p-3">
+          <h4 class="text-xs text-gray-500 font-medium">Puffer jacket</h4>
+          <p class="text-sm font-medium mt-1">€140.00</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Promo banner -->
+ <div class="w-full bg-[#f3f5f9] py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <!-- Texte -->
+    <div>
+      <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+        T-shirts<br>for Everyone
+      </h2>
+
+      <p class="text-gray-600 mb-6">
+        Stock up on our best-selling T-shirts for everyone.
+      </p>
+
+      <a href="#" class="inline-flex items-center text-gray-800 font-medium border-b border-gray-800 pb-1 hover:opacity-70">
+        Shop Now
+        <span class="ml-2">➜</span>
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div>
+      <img
+        src="images/Foreveryone.png"
+        alt="T-shirt promo"
+        class="w-full h-[330px] object-cover rounded-md"
+      />
+    </div>
+
+  </div>
+</div>
+
+ <!-- Top Icons Section -->
+<div class="w-full bg-white py-12">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+    <!-- 1 -->
+    <div class="flex flex-col items-center">
+      <img src="images/Messageeeeee.png" class="w-12 mb-3" />
+      <p class="text-gray-600 text-sm">
+        A question? Write to us at<br>
+        <span class="text-gray-800">email@example.com</span>
+      </p>
+    </div>
+
+    <!-- 2 -->
+    <div class="flex flex-col items-center">
+      <img src="images/Créditttttttt.png" class="w-12 mb-3" />
+      <p class="text-gray-600 text-sm">
+        Secure credit card<br>payment
+      </p>
+    </div>
+
+    <!-- 3 -->
+    <div class="flex flex-col items-center">
+      <img src="images/Portefeuillleeeeee.png" class="w-12 mb-3" />
+      <p class="text-gray-600 text-sm">
+        Free delivery for orders<br>over $250
+      </p>
+    </div>
+
+    <!-- 4 -->
+    <div class="flex flex-col items-center">
+      <img src="images/Avionnnnn.png" class="w-12 mb-3" />
+      <p class="text-gray-600 text-sm">
+        Return of goods from anywhere<br>in the world
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Divider -->
+<div class="border-t border-gray-200"></div>
+
+<!-- Main Footer Section -->
+<footer class="w-full bg-white py-12">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+    <!-- Customer service -->
+    <div>
+      <h3 class="font-semibold text-gray-800 mb-4">Customer service</h3>
+      <ul class="text-gray-600 space-y-2 text-sm">
+        <li>Need Help?</li>
+        <li>FAQ</li>
+        <li>Secure payment</li>
+        <li>Delivery</li>
+        <li>Returns & refunds</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+
+    <!-- Special services -->
+    <div>
+      <h3 class="font-semibold text-gray-800 mb-4">Special services</h3>
+      <ul class="text-gray-600 space-y-2 text-sm">
+        <li>Free delivery for order over $250</li>
+        <li>Chronapost Express delivery 24h</li>
+        <li>E-reservation</li>
+        <li>Expended returns</li>
+      </ul>
+    </div>
+
+    <!-- Follow us -->
+    <div>
+      <h3 class="font-semibold text-gray-800 mb-4">Follow us</h3>
+      <ul class="text-gray-600 space-y-2 text-sm">
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Pinterest</li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="font-semibold text-gray-800 mb-4">Newsletter</h3>
+      <p class="text-gray-600 text-sm mb-4">
+        Sing up for email updates on the latest<br>
+        collections, campaigns and video
+      </p>
+
+      <div class="flex">
+        <input
+          type="email"
+          placeholder="Email address"
+          class="border border-gray-300 px-3 py-2 w-full text-sm focus:outline-none"
+        />
+        <button class="border border-gray-300 px-4 py-2 text-sm">
+          OK
+        </button>
+      </div>
+
+      <div class="flex space-x-4 text-gray-400 mt-6">
+        <i class="ri-youtube-fill"></i>
+        <i class="ri-facebook-circle-fill"></i>
+        <i class="ri-instagram-line"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Copyright -->
+  <div class="max-w-6xl mx-auto mt-12 flex justify-between text-xs text-gray-500">
+    <p>Copyright © 2022 powered by Crocoblock, Inc. All rights reserved</p>
+    <div class="flex space-x-4">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
