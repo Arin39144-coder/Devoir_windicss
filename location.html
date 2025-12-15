@@ -15,6 +15,86 @@
         body {
             background: #0f0f0f;
             font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ========== RESPONSIVE MOBILE ========= */
+        @media (max-width: 768px) {
+
+            header {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 28px !important;
+                line-height: 1.2;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            section.w-11\/12 {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            section.w-11\/12 > div {
+                width: 100% !important;
+            }
+
+            section.w-11\/12 p {
+                font-size: 18px;
+            }
+
+            section.w-11\/12 span {
+                font-size: 12px;
+            }
+
+            section[style*="background-image"] h1 {
+                font-size: 30px !important;
+            }
+
+            button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* ========== RESPONSIVE TABLETTE ========= */
+        @media (min-width: 769px) and (max-width: 1024px) {
+
+            header nav {
+                gap: 20px;
+            }
+
+            section.w-11\/12 {
+                gap: 30px;
+            }
+
+            section.w-11\/12 > div:first-child {
+                width: 55%;
+            }
+
+            section.w-11\/12 > div:last-child {
+                width: 40%;
+            }
+
+            section[style*="background-image"] h1 {
+                font-size: 42px !important;
+            }
         }
     </style>
 </head>
@@ -52,7 +132,6 @@
             <h2 class="text-xl mb-4" style="border-bottom: 1px solid white;">Envoyer un e-mail</h2>
 
             <form class="flex flex-col space-y-4">
-
                 <div>
                     <label class="text-gray-500">Nom <span class="text-red-500">*</span></label>
                     <input type="text" class="text-black w-full p-2 bg-white border border-gray-400 rounded-none" />
@@ -99,7 +178,7 @@
             <div class="flex flex-col items-center">
                 <i class="fas fa-envelope text-green-500 text-4xl"></i>
                 <p class="mt-2 text-2xl md:text-3xl">
-              Contact par Email<br>
+                    Contact par Email<br>
                     <span class="text-xs">info@magintec.com</span>
                 </p>
             </div>
@@ -113,7 +192,9 @@
 
         <h2 class="text-sm tracking-wide md:text-lg">
             COMMENT RÉSERVER UNE<br>
-            <h1 class="mt-2 text-2xl md:text-3xl font-semibold" style="font-size: 50px;">LOCATION DE VOITURE DE SPORT</h1>
+            <h1 class="mt-2 text-2xl md:text-3xl font-semibold" style="font-size: 50px;">
+                LOCATION DE VOITURE DE SPORT
+            </h1>
         </h2>
 
         <p class="mt-3 text-sm md:text-base">
@@ -122,7 +203,8 @@
             ou via le formulaire de notre site.
         </p>
 
-        <button class="mt-6 bg-green-700 hover:bg-green-900 text-white px-8 py-3 rounded text-lg" style="background: rgb(3, 245, 3)">
+        <button class="mt-6 bg-green-700 hover:bg-green-900 text-white px-8 py-3 rounded text-lg"
+            style="background: rgb(39, 109, 39)">
             JE RÉSERVE MA VOITURE
         </button>
     </section>
